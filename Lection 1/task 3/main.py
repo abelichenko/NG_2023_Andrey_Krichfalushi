@@ -1,16 +1,11 @@
-def verifNum(num): #Valid selection check
-    if(num != 1 and num != 2):
-        print("You can't do that, you RAGENT!")
-        return False
-    return True
-
 def actionSelection(): #Please enter the user's number for him to select an action
     selectedNum = int(input("Choose what you need:\n"
               "1) Convert from Celsius to Fahrenheit"
               "\n2) Convert from Fahrenheit to Celsius\n"))
-    if(verifNum(selectedNum)): #We send his choice for verification
+    if(selectedNum == 1 or selectedNum == 2): 
         return selectedNum
     else:
+        print("invalid value")
         main()
 
 def main():
