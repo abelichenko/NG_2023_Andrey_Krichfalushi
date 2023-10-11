@@ -1,3 +1,3 @@
-a = input("Enter first number: ")
-b = input("Enter second number: ")
-print('The sum of your two numbers:', int(a) + int(b))
+firstNum = input("Write me the first number and press Enter: ")
+secondNum = input("write me the second numberand press Enter: ")
+print('The sum of your two numbers:', int(firstNum) + int(secondNum))
